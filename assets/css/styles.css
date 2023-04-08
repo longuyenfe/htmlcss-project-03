@@ -8,6 +8,145 @@ html {
 
 body {
     font-size: 1.6rem;
-    color: red;
     font-family: "Sora", sans-serif;
+}
+
+:root {
+    --header-bg: #10375c;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 60px;
+    display: inline-block;
+    color: #fff;
+    background: #2e80ce;
+    height: var(--height);
+    line-height: var(--height); /* can giua chu cai trong btn */
+    padding: 0 20px;
+    border-radius: 999px;
+    border: 1px solid #2e80ce;
+    min-width: 205px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    padding-top: 30px;
+    background: var(--header-bg);
+}
+
+.logo {
+    font-size: 1em;
+    display: inline-flex;
+    position: relative;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2e80ce;
+}
+
+.logo__circle::after {
+    top: 1.1em;
+    left: 1.1em;
+    position: absolute;
+    width: 1.6em;
+    height: 1.6em;
+    background: #ffffff;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    text-align: right;
+    line-height: 1.6em;
+}
+
+.logo__brand {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar__list {
+    display: flex;
+}
+
+.header-action__login,
+.nav-bar__link {
+    padding: 4px 21px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #c9d2da;
+}
+
+.nav-bar__link:hover,
+.nav-bar__link--active {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav-bar__link--active::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    top: -2px;
+    left: -8px;
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+    /* khac phuc loi giua button va a co khoang trang */
+}
+
+.header-action__login {
+    margin-right: 7px;
+}
+
+.header-action__signup {
+    --height: 44px;
+    min-width: 104px;
 }
