@@ -506,3 +506,52 @@ a {
 .member__control-next-icon {
     rotate: 180deg;
 }
+
+/* Install*/
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background: #2e80ce;
+    border-radius: 4px;
+}
+
+.install__img {
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__desc {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-top: 18px;
+    line-height: 1.67;
+    color: #ffffff;
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
