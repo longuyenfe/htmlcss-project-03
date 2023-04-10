@@ -657,3 +657,35 @@ a {
 }
 
 /* Appointment */
+.appointment {
+    margin: 85px 0;
+    text-align: center;
+}
+
+.appointment__inner {
+    padding: 100px 0;
+    background: #f7fbff;
+}
+
+.appointment__heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: -18px;
+    left: 517px;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.appointment__desc {
+    margin-top: 38px;
+    max-width: 617px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.appointment__cta {
+    display: inline-block;
+    margin-top: 38px;
+}
